@@ -1039,6 +1039,7 @@ MonoBehaviour:
   CV2: {fileID: 334244356}
   LICENSE2: {fileID: 2108655380}
   shouldMove: 0
+  isFinishedMoving: 0
 --- !u!1 &1011122654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1200,9 @@ MonoBehaviour:
   CharacterREJECTED: {fileID: 746867284}
   cvREJECTED: {fileID: 1244196796}
   diplomaREJECTED: {fileID: 1404876365}
+  Character2REJECTED: {fileID: 918788990}
+  cv2REJECTED: {fileID: 1425953253}
+  license2REJECTED: {fileID: 1339707373}
 --- !u!1 &1024339056
 GameObject:
   m_ObjectHideFlags: 0

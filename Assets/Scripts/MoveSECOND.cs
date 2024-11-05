@@ -11,6 +11,7 @@ public class SecondMoveScript : MonoBehaviour
     public GameObject CV2;
     public GameObject LICENSE2;
     public bool shouldMove = false;
+    public bool isFinishedMoving = false;
     //public GameObject RejectButton;
     void Start()
     {
@@ -24,10 +25,12 @@ public class SecondMoveScript : MonoBehaviour
         {
             // Move the sprite along the x-axis
             transform.position += Vector3.right * speed * Time.deltaTime;
+            isFinishedMoving = false;
         }
         else if (transform.position.x >= TWOstopPositionX){
         CV2.SetActive(true);
         LICENSE2.SetActive(true);
+        isFinishedMoving = true;
         //shouldMove = false; // Stop further movement
         }
     }
