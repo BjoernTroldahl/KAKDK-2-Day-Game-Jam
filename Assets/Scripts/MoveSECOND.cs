@@ -14,6 +14,7 @@ public class SecondMoveScript : MonoBehaviour
     public bool isFinishedMoving = false;
     //public GameObject RejectButton;
     public GameObject failTEXT1;
+    public GameObject successTEXT1;
     void Start()
     {
     // Calculate 1/3 of the game window width in world units
@@ -33,6 +34,7 @@ public class SecondMoveScript : MonoBehaviour
         LICENSE2.SetActive(true);
         isFinishedMoving = true;
         failTEXT1.SetActive(false);
+        successTEXT1.SetActive(false);
         //shouldMove = false; // Stop further movement
         }
     }

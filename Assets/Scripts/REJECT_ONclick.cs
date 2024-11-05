@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Reject_ONclick : MonoBehaviour
 {
+    public GameObject succesText;
     //1
     public GameObject CharacterREJECTED;
     public GameObject cvREJECTED;
@@ -33,6 +34,7 @@ public class Reject_ONclick : MonoBehaviour
     }
 
     public void Click(){
+    succesText.SetActive(true);
     CharacterREJECTED.SetActive(false); 
     cvREJECTED.SetActive(false);
     diplomaREJECTED.SetActive(false);
@@ -43,6 +45,7 @@ public class Reject_ONclick : MonoBehaviour
     }
 
     if(ClickCounterNO == 1){
+    succesText.SetActive(true);
     Character2REJECTED.SetActive(false);
     cv2REJECTED.SetActive(false);
     license2REJECTED.SetActive(false);

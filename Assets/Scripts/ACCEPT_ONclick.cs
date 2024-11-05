@@ -5,6 +5,7 @@ using UnityEngine;
 public class ACCEPT_ONclick : MonoBehaviour
 {
     public GameObject failText1;
+    public GameObject failText2;
     //1
     public GameObject CharacterACCEPTED;
     public GameObject cvACCEPTED;
@@ -44,9 +45,10 @@ public class ACCEPT_ONclick : MonoBehaviour
     }
 
     if(ClickCounterYES == 1){
-    Character2ACCEPTED.GetComponent<SecondMoveScript>().transform.position = new Vector3(10,3.22f,0);
+    Character2ACCEPTED.GetComponent<SecondMoveScript>().transform.position = new Vector3(12,3.22f,0);
     cv2ACCEPTED.SetActive(false);
     license2ACCEPTED.SetActive(false);
+    failText2.SetActive(true);
     }
 }
 }
