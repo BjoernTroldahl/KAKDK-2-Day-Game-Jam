@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ACCEPT_ONclick : MonoBehaviour
 {
+    public GameObject failText1;
+    //1
     public GameObject CharacterACCEPTED;
     public GameObject cvACCEPTED;
     public GameObject diplomaACCEPED;
@@ -35,6 +37,7 @@ public class ACCEPT_ONclick : MonoBehaviour
     cvACCEPTED.SetActive(false);
     diplomaACCEPED.SetActive(false);
     MovingCharacter2.StartMoving();
+    failText1.SetActive(true);
 
     if (MovingCharacter2.isFinishedMoving == true){
     ClickCounterYES = ClickCounterYES + 1;
