@@ -15,7 +15,7 @@ public class Reject_ONclick : MonoBehaviour
     public GameObject cv2REJECTED;
     public GameObject license2REJECTED;
 
-    private int ClickCounter = 0;
+    private int ClickCounterNO = 0;
 
     SecondMoveScript movingCharacter2;
 
@@ -39,10 +39,10 @@ public class Reject_ONclick : MonoBehaviour
     movingCharacter2.StartMoving();
 
     if (movingCharacter2.isFinishedMoving == true){
-    ClickCounter = ClickCounter + 1;
+    ClickCounterNO = ClickCounterNO + 1;
     }
 
-    if(ClickCounter == 1){
+    if(ClickCounterNO == 1){
     Character2REJECTED.SetActive(false);
     cv2REJECTED.SetActive(false);
     license2REJECTED.SetActive(false);
