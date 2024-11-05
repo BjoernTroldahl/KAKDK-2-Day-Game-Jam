@@ -25,7 +25,7 @@ public class SecondMoveScript : MonoBehaviour
             // Move the sprite along the x-axis
             transform.position += Vector3.right * speed * Time.deltaTime;
         }
-        else{
+        else if (transform.position.x >= TWOstopPositionX){
         CV2.SetActive(true);
         LICENSE2.SetActive(true);
         //shouldMove = false; // Stop further movement

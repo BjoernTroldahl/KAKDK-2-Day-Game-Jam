@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5a4b0e0b272347a83ca32df2b7c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   CV2: {fileID: 334244356}
   LICENSE2: {fileID: 2108655380}
   shouldMove: 0
