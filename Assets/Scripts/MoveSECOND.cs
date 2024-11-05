@@ -20,7 +20,7 @@ public class SecondMoveScript : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x < TWOstopPositionX) //shouldMove &&
+        if (shouldMove && transform.position.x < TWOstopPositionX) //shouldMove &&
         {
             // Move the sprite along the x-axis
             transform.position += Vector3.right * speed * Time.deltaTime;
@@ -32,8 +32,13 @@ public class SecondMoveScript : MonoBehaviour
         }
     }
 
-     public void StartMovement()
+    public void StartMoving()
     {
-        shouldMove = true;
+        shouldMove = true;  // Allow movement
     }
+
+    // public void StartMovement()
+    //{
+        //shouldMove = true;
+    //}
 }

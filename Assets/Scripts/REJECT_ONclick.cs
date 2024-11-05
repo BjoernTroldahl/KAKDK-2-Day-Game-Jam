@@ -9,11 +9,13 @@ public class Reject_ONclick : MonoBehaviour
     public GameObject cvREJECTED;
     public GameObject diplomaREJECTED;
 
-    public SecondMoveScript characterSecondMOVE;
+    SecondMoveScript movingCharacter2;
+
+    //public GameObject SecondCharacter;
     // Start is called before the first frame update
     void Start()
     {
-        
+        movingCharacter2 = GameObject.Find("Character2Sprite").GetComponent<SecondMoveScript>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class Reject_ONclick : MonoBehaviour
     CharacterREJECTED.SetActive(false); 
     cvREJECTED.SetActive(false);
     diplomaREJECTED.SetActive(false);
-    characterSecondMOVE.StartMovement();
+    movingCharacter2.StartMoving();
+    //SecondCharacter.GetComponent<SecondMoveScript>().shouldMove = true;
     }
 }
