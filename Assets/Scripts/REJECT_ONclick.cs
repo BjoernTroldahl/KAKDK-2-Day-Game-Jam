@@ -8,6 +8,8 @@ public class Reject_ONclick : MonoBehaviour
     public GameObject CharacterREJECTED;
     public GameObject cvREJECTED;
     public GameObject diplomaREJECTED;
+
+    public SecondMoveScript characterSecondMOVE;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +26,6 @@ public class Reject_ONclick : MonoBehaviour
     CharacterREJECTED.SetActive(false); 
     cvREJECTED.SetActive(false);
     diplomaREJECTED.SetActive(false);
+    characterSecondMOVE.StartMovement();
     }
 }
